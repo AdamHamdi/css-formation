@@ -2,6 +2,7 @@
         overflow: hidden;
         width: 100%;
         margin-bottom: 20px;
+        counter-increment: members-counter;
         /* display: inline-block; */
     }
     
@@ -25,17 +26,9 @@
         position: relative;
     }
     
-    .one::after {
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 100%;
-        background-color: rgb(19, 179, 64);
-        right: -10px;
-        top: 0;
-    }
-    
     .one::before {
+        /* content: attr(data-text);
+        display: none; */
         content: "";
         position: absolute;
         width: 0px;
@@ -46,5 +39,49 @@
         margin-top: -20px;
         border-color: transparent green transparent transparent;
         border-width: 25px;
+        border-style: solid;
+    }
+    /*     
+    .one:hover::before {
+        display: block;
+    } */
+    
+    .one::after {
+        content: counter(members-counter);
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(19, 179, 64);
+        right: -15px;
+        top: 50%;
+        margin-top: -15px;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    ul li {
+        position: relative;
+        padding: 5px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    ul li::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        left: -20px;
+        top: 60%;
+        margin-top: -15px;
+        margin-left: -10px;
+        border-color: transparent green transparent transparent;
+        border-width: 10px;
         border-style: solid;
     }
