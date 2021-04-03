@@ -1,0 +1,11 @@
+/*
+... Horizental-Shadow | V-Shadow |Blur | Spread |Color | Inset
+*/
+
+div {
+    background-color: rgb(99, 99, 8);
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 0 0#ddd inset;
+}
