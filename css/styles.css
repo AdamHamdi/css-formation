@@ -1,0 +1,65 @@
+div {
+    /* background-image: url('../images/nature.jpg'); */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: left top; */
+    /* background-size: cover; */
+    /* background-size: contain; */
+    /* background-color: #ddd;
+    width: 70%;
+    margin: auto;
+    padding: 10px; */
+    /* border-width: 10px;
+    border-color: red;
+    border-style: solid; */
+    /* border: 2px solid green; */
+}
+
+
+/* 
+Block
+.
+.Take full width if no width
+.Add Line Breack
+.Respect Padding, margin, width 
+
+Inline
+
+.dont respect width, height
+. respect padding and margin [just left and right]
+.don't add Line Breack
+
+Inline-Block
+
+.Allow Elements Before And After It
+.Respect Padding, margin, width 
+.
+
+*/
+
+div {
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+
+/* span {
+    background-color: #EEE;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+} */
+
+span {
+    background-color: #EEE;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 40px;
+}

@@ -1,0 +1,12 @@
+div p {
+    background-color: #EEE;
+    padding: 10px;
+    /* letter-spacing: 2px; */
+    /* text-indent: 20px; */
+    /* line-height: 1.6; */
+    /* word-spacing: 5px; */
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

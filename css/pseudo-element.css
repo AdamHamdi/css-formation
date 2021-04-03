@@ -1,0 +1,50 @@
+    .parent {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 20px;
+        /* display: inline-block; */
+    }
+    
+    .user {
+        width: 100px;
+        height: 90px;
+        background-color: gray;
+        text-align: center;
+        padding: 10px;
+        margin-right: 40px;
+        font-size: 50px;
+        float: left;
+    }
+    
+    .one {
+        width: 900px;
+        float: left;
+        background-color: rgb(230, 169, 169);
+        padding: 10px;
+        font-size: 26px;
+        position: relative;
+    }
+    
+    .one::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: rgb(19, 179, 64);
+        right: -10px;
+        top: 0;
+    }
+    
+    .one::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        background-color: transparent;
+        left: -60px;
+        top: 50%;
+        margin-top: -20px;
+        border-color: transparent green transparent transparent;
+        border-width: 25px;
+        border-style: solid;
+    }

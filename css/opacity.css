@@ -1,0 +1,29 @@
+.one {
+    background-color: red;
+    opacity: 0.2;
+    padding: 20px
+}
+
+.two {
+    background-color: red;
+    opacity: 0.4;
+    padding: 20px
+}
+
+.three {
+    background-color: red;
+    opacity: 0.6;
+    padding: 20px
+}
+
+.four {
+    background-color: red;
+    opacity: 0.8;
+    padding: 20px
+}
+
+.five {
+    background-color: red;
+    opacity: 1;
+    padding: 20px
+}

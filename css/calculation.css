@@ -1,0 +1,13 @@
+div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: rgb(231, 216, 216);
+    width: calc((100% - 90px)/5);
+    margin-left: 15px;
+    float: left;
+}
+
+body {
+    margin: 0px;
+}

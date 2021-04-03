@@ -1,0 +1,20 @@
+div {
+    background: #e8d906;
+    color: black;
+    text-shadow: 1px 1px 2px red;
+}
+
+a {
+    text-transform: capitalize;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 6px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/*
+text-shadow => H-shadow, V-Shadow, Blur, Color*/
