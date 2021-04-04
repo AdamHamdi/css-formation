@@ -1,10 +1,24 @@
 .content {
-    position: relative;
-    padding: 260px;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.nav {
+.content div {
+    padding: 20px;
+    background-color: rgb(241, 153, 21);
+    color: rgb(17, 1, 1);
+    height: 300px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+/* .nav {
     position: absolute;
     left: 0;
     top: 0;
@@ -14,9 +28,10 @@
     height: 100%;
     float: left;
     padding: 50px;
-}
+} */
 
-.article {
+
+/* .article {
     position: absolute;
     right: 33%;
     left: 20%;
@@ -26,9 +41,10 @@
     height: 100%;
     float: left;
     padding: 50px;
-}
+} */
 
-.ads {
+
+/* .ads {
     position: absolute;
     right: 0;
     top: 0%;
@@ -37,15 +53,13 @@
     height: 100%;
     float: left;
     padding: 50px;
-}
+} */
 
-.header,
+div,
 .footer,
-.nav,
-.ads,
-.article {
+.header {
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -74,3 +88,32 @@
 body {
     margin: 0;
 }
+
+@media (max-width: 767px) {
+    .content div {
+        width: calc(100% - 1px);
+    }
+}
+
+
+/*Small screens*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content div {
+        width: calc(43% - 5px);
+    }
+}
+
+
+/*Medium screens*/
+
+@media (min-width: 992px) {
+    .content div {
+        width: calc(20% - 1px);
+    }
+}
+
+
+/*large screens*/
+
+@media (min-width: 1200px) {}
