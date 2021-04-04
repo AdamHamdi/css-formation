@@ -1,17 +1,76 @@
-.parent {
-    background-color: red;
-    padding: 10px;
+.content {
+    position: relative;
+    padding: 260px;
+    overflow: hidden;
 }
 
-.parent div {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.nav {
+    position: absolute;
+    left: 0;
+    top: 0;
     text-align: center;
-    background-color: rgb(231, 216, 216);
-    width: 25%;
+    background-color: rgb(253, 123, 123);
+    width: 20%;
+    height: 100%;
     float: left;
+    padding: 50px;
+}
+
+.article {
+    position: absolute;
+    right: 33%;
+    left: 20%;
+    top: 0%;
+    background-color: rgb(32, 6, 6);
+    width: 69%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+}
+
+.ads {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    background-color: rgb(220, 185, 185);
+    width: 150px;
+    height: 100%;
+    float: left;
+    padding: 50px;
+}
+
+.header,
+.footer,
+.nav,
+.ads,
+.article {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .clear {
     clear: both;
+}
+
+.header {
+    /* overflow: hidden; */
+    width: 100%;
+    background-color: green;
+    height: 80px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    float: left;
+    background-color: rgb(4, 48, 4);
+}
+
+body {
+    margin: 0;
 }

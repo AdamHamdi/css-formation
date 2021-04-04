@@ -1,75 +1,169 @@
-.header {
-    width: 100%;
-    background-color: green;
-    height: 40px;
-    padding: 20px;
-    text-transform: uppercase;
-}
-
-.header,
-.content,
-.nav,
-.ads,
-.article,
-.footer {
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.header,
-.footer {
-    margin-right: 10px;
-    text-align: center;
-}
-
-.content {
-    position: relative;
-    padding: 190px;
-    overflow: hidden;
-}
-
-.footer {
-    width: 100%;
-    height: 40px;
-    padding: 20px;
-    background-color: green;
-}
-
-.nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    float: left;
-    padding: 50px;
-    background-color: rgb(46, 46, 32);
-}
-
-.article {
-    position: absolute;
-    top: 0;
-    padding: 50px;
-    left: 20%;
-    right: 33%;
-    width: 80%;
-    height: 100%;
-    float: left;
-    background-color: rgb(109, 109, 91);
-}
-
-.ads {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 50px;
-    width: 20%;
-    height: 100%;
-    float: left;
-    background-color: rgb(119, 15, 172);
-}
-
-body {
-    margin: 0
-;}
+    .header {
+        /* overflow: hidden; */
+        width: 100%;
+        background-color: green;
+        height: 80px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    
+    .header,
+    .content,
+    .nav,
+    .ads,
+    .article,
+    .footer {
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    .header,
+    .footer {
+        margin-right: 10px;
+        text-align: center;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    .content {
+        position: relative;
+        padding: 260px;
+        overflow: hidden;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 40px;
+        padding: 20px;
+        float: left;
+        background-color: green;
+    }
+    
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 19.5%;
+        height: 100%;
+        float: left;
+        padding: 50px;
+        background-color: rgb(46, 46, 32);
+    }
+    
+    .article {
+        position: absolute;
+        top: 0;
+        padding: 50px;
+        left: 20%;
+        right: 33%;
+        width: 69%;
+        height: 100%;
+        float: left;
+        background-color: rgb(109, 109, 91);
+    }
+    
+    .ads {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 50px;
+        width: 9.5%;
+        height: 100%;
+        float: left;
+        background-color: rgb(119, 15, 172);
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    ul li {
+        list-style: none;
+        margin-top: -10px;
+        margin-right: 15px;
+        text-decoration: underline;
+        float: left;
+        font-size: 25px;
+    }
+    
+    ul li:hover {
+        background-color: rgb(214, 202, 219);
+        color: black;
+        width: fit-content;
+    }
+    
+    button {
+        position: absolute;
+        right: 10px;
+        display: none;
+    }
+    
+    .one {
+        position: absolute;
+        background-color: rgb(205, 185, 214);
+        width: 12px;
+        height: 4px;
+    }
+    /* @media (max-width:515px) {
+        .nav {
+            position: absolute;
+            width: 100%;
+            height: 25%
+        }
+    } */
+    /*mobile screens*/
+    
+    @media (max-width: 767px) {
+        .nav {
+            position: absolute;
+            width: 100%;
+            height: 20%;
+            display: block;
+        }
+        .article {
+            position: absolute;
+            width: 100%;
+            height: 60%;
+            top: 25%;
+            left: 0;
+            display: block;
+        }
+        .ads {
+            position: absolute;
+            width: 100%;
+            top: 80%;
+            display: block;
+            bottom: 0;
+            left: 0;
+        }
+        .header {
+            overflow: hidden;
+            width: 100%;
+            height: fit-content;
+            margin: 0px;
+            display: block;
+            background-color: green;
+        }
+        ul li {
+            /* height: fit-content; */
+            margin-top: -10px;
+            padding: 10px;
+            margin-right: 15px;
+            text-decoration: underline;
+            font-size: 25px;
+            display: block;
+            background-color: green;
+        }
+    }
+    /*Small screens*/
+    
+    @media (min-width: 768px) {}
+    /*Medium screens*/
+    
+    @media (min-width: 992px) {}
+    /*large screens*/
+    
+    @media (min-width: 1200px) {}
