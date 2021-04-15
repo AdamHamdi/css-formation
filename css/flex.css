@@ -1,0 +1,54 @@
+*{box-sizing:border-box;}
+/* 
+Parent{
+    display:flex;
+    flex-direction: row(default), row-reverse, column, column-reverse;
+    flex-wrap:wrap, wrap-reverse, nowrap default value; pour l'element surcharge
+    flex-flow: row wrap;[flex-direction: row]+[flex-wrap:wrap;]
+    -------------
+    justify-content: flex-start; =>default value; flex-start , center;
+    justify-content:space-between, space-around ,space-evenly;    
+    
+}*/
+.flex{
+    /* overflow:hidden; */
+    display:flex;
+    background-color:goldenrod;
+    padding: 20px;
+    width:auto;
+    margin: 20px;
+    /* flex-direction: row;
+    flex-wrap:wrap; */
+    /* flex-flow: row wrap; */
+    justify-content:space-evenly;
+    
+}
+.flex div{
+    float:left;
+    background-color: hotpink;
+    color:indigo;
+    /* width:25%; */
+    width: calc(94% / 3);
+    padding: 20px;
+    border:1px solid green;
+    text-align: center;
+}
+.float{
+    overflow:hidden;
+   
+    background-color:rgb(64, 247, 9);
+    padding: 20px;
+    width:auto;
+    margin: 20px;
+    
+}
+.float div{
+    float:left;
+    background-color: rgb(138, 84, 111);
+    color:rgb(180, 238, 23);
+    /* width:25%; */
+    width: calc(98% / 3);
+    padding: 20px;
+    border:1px solid green;
+    text-align: center;
+}
