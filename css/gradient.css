@@ -1,0 +1,41 @@
+/**
+ * Gradient
+ * linear-gradient(direction or ongle ,color stop1, color stop2,....)
+ * direction: to top, to right, to bottom, to left;
+ * ongle :(0 deg or 360 deg=top), (90deg:right), (180deg:bottom),(270deg:left)
+*/
+
+div{
+    background-color:#eee;
+    width: 800px;
+    height: 200px;
+    background-image: linear-gradient(to right,
+    #2980b9 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80%);
+    margin: 20px auto;
+    position: relative;
+}
+div:before{
+    content:"";
+    position: absolute;
+    top:-6px;
+    left: 0;
+    background-color:rgb(226, 34, 34);
+    width:100%;
+    height: 5px;
+    background-image: linear-gradient(to right,
+    #2980b9 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80%);
+}

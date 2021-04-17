@@ -1,0 +1,17 @@
+div img{
+    width: 40%;
+    margin: auto;
+    transition: 2s;
+    /* filter: grayscale(100%); */
+    /* filter:opacity(50%); */
+    /* filter: saturate(0); */
+    /* filter:invert(80%) */
+    filter: blur(2px);
+}
+div img:hover{
+    /* filter: grayscale(0); */
+    /* filter:opacity(100%) */
+    /* filter: saturate(100%); */
+    /* filter:invert(0) */
+    filter: blur(0);
+}
