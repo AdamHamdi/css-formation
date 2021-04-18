@@ -8,4 +8,36 @@
  * =>units[px, %, auto, repeat(),mix, fraction]
  *  grid-template-columns: 100px 100px 1fr 2fr; the first and the second have 100px, the third has one fraction of the remaining space, finaly the forth has two fraction of the remaining space.
  * auto =fit-content=> take just his element space.
+ * ***************************
+ * grid-template-rows:=>[Number of Rows height in]=>units[px, %, auto, repeat(),mix, fraction] 
+ * row-gap: margin between rows
+ * column-gap: margin between column
+ * ===> gap:[row-gap and column-gap]
 */
+
+
+
+*{
+    box-sizing: border-box;
+}
+.parent{
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4 ,auto);
+    grid-template-rows: repeat(3 ,auto);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.parent div{
+    background-color: green;
+    color: #fff;
+    padding:20px;
+    font-size: 30px;
+    text-align: center;
+    
+}
