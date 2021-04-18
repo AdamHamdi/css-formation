@@ -1,0 +1,11 @@
+/**
+ * Grid
+ * PARENT
+ * -display: grid | inline-grid
+ * grid-template-columns =>[Number of column in] example:
+ *  grid-template-columns: 100px 100px 100px; =>three columns with 100px as width
+ *  grid-template-columns: 100px 200px 25% auto; =>four columns the first has 100px, the second has 200px, the third has 25% and the forth has the value auto;
+ * =>units[px, %, auto, repeat(),mix, fraction]
+ *  grid-template-columns: 100px 100px 1fr 2fr; the first and the second have 100px, the third has one fraction of the remaining space, finaly the forth has two fraction of the remaining space.
+ * auto =fit-content=> take just his element space.
+*/
