@@ -21,6 +21,7 @@ div{
     margin: 20px auto;
     position: relative;
 }
+
 div:before{
     content:"";
     position: absolute;
@@ -39,3 +40,46 @@ div:before{
     #8e44ad 80%,
     #c0392b 80%);
 }
+.imge{
+    position: relative;
+    margin: 15% 30% ;
+}
+.imge::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: -15px;
+    width: 530px;
+    height: 530px;
+    background-color: #FF5F6D;
+    /* background-image: linear-gradient(90deg, #FFC371, #FF5F6D); */
+    background-image: linear-gradient(90deg, #FFC371, #FF5F6D);
+    border-radius: 55% 35% 48% 30% / 40% 40% 70% 6%;
+    will-change: border-radius, transform, opacity;
+    animation: heroShape 6s linear infinite;
+    display: block;
+    z-index: -1;
+    opacity: 0.4;
+}
+    .imge::after {
+        position: absolute;
+        content: "";
+        left: 50px;
+        top: -35px;
+        width: 430px;
+        height: 430px;
+        background-color: #FF512F;
+        /* background-image: linear-gradient(90deg, #F09819, #FF512F); */
+        background-image: linear-gradient(90deg , #F09819, #FF512F);
+        border-radius: 55% 35% 48% 30% / 40% 40% 70% 6%;
+        will-change: border-radius, transform, opacity;
+        animation: heroShapetwo 4s linear infinite;
+        display: block;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px){
+.img::before, .hero-image::after {
+    width: 350px;
+    height: 350px;
+    left: 80px;}}
